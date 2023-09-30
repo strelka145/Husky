@@ -218,3 +218,8 @@ class Husky {
         return strings;
     }
 }
+
+function husky(input_text,targetElement){
+    let graph = new Husky(input_text);
+    graph.makeGraph(targetElement);
+}
