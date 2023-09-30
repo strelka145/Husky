@@ -3,6 +3,8 @@
 
 A javascript library for drawing PCR temperature cycle graphs.
 
+Sample: https://codepen.io/kmcstrelka/pen/XWoBMKK
+
 ![example image](images/example.svg)
 
 ## Usage
