@@ -3,6 +3,8 @@
 
 A javascript library for drawing PCR temperature cycle graphs.
 
+![example image](images/example.svg)
+
 ## Usage
 
 Add Husky to your html file.
