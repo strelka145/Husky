@@ -36,5 +36,5 @@ Create an instance from the Husky class and execute the makeGraph method.
 
 ```javascript
 let graph = new Husky(inputtext);
-graph.makeGraph(document.getElementById("graph"));
+graph.makeGraph(document.getElementById("husky"));
 ```
