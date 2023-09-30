@@ -19,6 +19,8 @@ class Husky {
         this.svgElement =document.createElementNS("http://www.w3.org/2000/svg", "svg");
         this.svgElement.setAttribute("height", "400");
         this.svgElement.setAttribute("width", this.width);
+        this.svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+        this.svgElement.setAttribute("viewBox", "0 0 "+this.width+" 400");
     }
 
     makeGraph(targetElement){
