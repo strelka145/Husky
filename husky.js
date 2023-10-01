@@ -4,12 +4,12 @@ class Husky {
         separatedStrings.pop();
         if(separatedStrings.length==1){
             this.temperature_list=separatedStrings[0].match(/[\d\.]+/g).map(Number);
-            this.time_list=Array(temperature_list.length).fill('');
-            this.memo_list=Array(temperature_list.length).fill('');
+            this.time_list=Array(this.temperature_list.length).fill('');
+            this.memo_list=Array(this.temperature_list.length).fill('');
         }else if(separatedStrings.length==2){
             this.temperature_list=separatedStrings[0].match(/[\d\.]+/g).map(Number);
             this.time_list=separatedStrings[1].split(/,/).map(item => item.trim());
-            this.memo_list=Array(temperature_list.length).fill('');
+            this.memo_list=Array(this.temperature_list.length).fill('');
         }else if(separatedStrings.length==3){
             this.temperature_list=separatedStrings[0].match(/[\d\.]+/g).map(Number);
             this.time_list=separatedStrings[1].split(/,/).map(item => item.trim());
