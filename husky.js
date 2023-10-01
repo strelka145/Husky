@@ -84,7 +84,7 @@ class Husky {
             rectangle.setAttribute("height", height);
 
             //Fill alternately
-            if(i%2!=0){
+            if(i%2==0){
                 rectangle.setAttribute("fill", "none");
             }else{
                 rectangle.setAttribute("fill", "#b7ccf4");
