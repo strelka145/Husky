@@ -1,5 +1,5 @@
 class Husky {
-    constructor(table){
+    constructor(table,options){
         let separatedStrings = table.split(/;/);
         separatedStrings.pop();
         if(separatedStrings.length==1){
@@ -17,8 +17,11 @@ class Husky {
         }
         this.width=125*this.temperature_list.length;
         this.svgElement =document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        this.svgElement.setAttribute("height", "400");
-        this.svgElement.setAttribute("width", this.width);
+        if(!options.scale){
+            options.scale=1;
+        }
+        this.svgElement.setAttribute("height", 400*options.scale);
+        this.svgElement.setAttribute("width", this.width*options.scale);
         this.svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
         this.svgElement.setAttribute("viewBox", "0 0 "+this.width+" 400");
     }
